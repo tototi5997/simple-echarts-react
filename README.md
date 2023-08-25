@@ -1,27 +1,7 @@
-# React + TypeScript + Vite
+# Simple Echarts
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+可视化的界面方便使用者快速配置，导出 Ecahrts 图标
 
-Currently, two official plugins are available:
+## 简介
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+使用官方提供的 Ecahrts 配置需要对Ecahrts进行一定程度的学习，以及对文档需要有足够的了解，使用 SimpleEcharts 可以快速帮助开发人员完成图标配置的导出，就算是不懂代码的设计人员，产品经理也可以用来辅助UI的设计，原型图的绘制
