@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@types/lodash-es': ^4.17.9
   '@types/react': ^18.2.15
   '@types/react-dom': ^18.2.7
   '@typescript-eslint/eslint-plugin': ^6.0.0
@@ -11,6 +12,8 @@ specifiers:
   eslint-plugin-react-hooks: ^4.6.0
   eslint-plugin-react-refresh: ^0.4.3
   less: ^4.2.0
+  lodash-es: ^4.17.21
+  monaco-editor: ^0.43.0
   react: ^18.2.0
   react-dom: ^18.2.0
   react-router-dom: ^6.15.0
@@ -18,11 +21,13 @@ specifiers:
   vite: ^4.4.5
 
 dependencies:
+  monaco-editor: registry.npmmirror.com/monaco-editor/0.43.0
   react: registry.npmmirror.com/react/18.2.0
   react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
   react-router-dom: registry.npmmirror.com/react-router-dom/6.15.0_biqbaboplfbrettd7655fr4n2y
 
 devDependencies:
+  '@types/lodash-es': registry.npmmirror.com/@types/lodash-es/4.17.9
   '@types/react': registry.npmmirror.com/@types/react/18.2.21
   '@types/react-dom': registry.npmmirror.com/@types/react-dom/18.2.7
   '@typescript-eslint/eslint-plugin': registry.npmmirror.com/@typescript-eslint/eslint-plugin/6.4.1_l6j2lghoktkeggifspbfklgyju
@@ -33,6 +38,7 @@ devDependencies:
   eslint-plugin-react-hooks: registry.npmmirror.com/eslint-plugin-react-hooks/4.6.0_eslint@8.47.0
   eslint-plugin-react-refresh: registry.npmmirror.com/eslint-plugin-react-refresh/0.4.3_eslint@8.47.0
   less: registry.npmmirror.com/less/4.2.0
+  lodash-es: registry.npmmirror.com/lodash-es/4.17.21
   typescript: registry.npmmirror.com/typescript/5.1.6
   vite: registry.npmmirror.com/vite/4.4.9_less@4.2.0
 
@@ -714,6 +720,20 @@ packages:
     resolution: {integrity: sha512-Hr5Jfhc9eYOQNPYO5WLDq/n4jqijdHNlDXjuAQkkt+mWdQR+XJToOHrsD4cPaMXpn6KO7y2+wM8AZEs8VpBLVA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/json-schema/-/json-schema-7.0.12.tgz}
     name: '@types/json-schema'
     version: 7.0.12
+    dev: true
+
+  registry.npmmirror.com/@types/lodash-es/4.17.9:
+    resolution: {integrity: sha512-ZTcmhiI3NNU7dEvWLZJkzG6ao49zOIjEgIE0RgV7wbPxU0f2xT3VSAHw2gmst8swH6V0YkLRGp4qPlX/6I90MQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/lodash-es/-/lodash-es-4.17.9.tgz}
+    name: '@types/lodash-es'
+    version: 4.17.9
+    dependencies:
+      '@types/lodash': registry.npmmirror.com/@types/lodash/4.14.198
+    dev: true
+
+  registry.npmmirror.com/@types/lodash/4.14.198:
+    resolution: {integrity: sha512-trNJ/vtMZYMLhfN45uLq4ShQSw0/S7xCTLLVM+WM1rmFpba/VS42jVUgaO3w/NOLiWR/09lnYk0yMaA/atdIsg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/lodash/-/lodash-4.14.198.tgz}
+    name: '@types/lodash'
+    version: 4.14.198
     dev: true
 
   registry.npmmirror.com/@types/prop-types/15.7.5:
@@ -1765,6 +1785,12 @@ packages:
       p-locate: registry.npmmirror.com/p-locate/5.0.0
     dev: true
 
+  registry.npmmirror.com/lodash-es/4.17.21:
+    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/lodash-es/-/lodash-es-4.17.21.tgz}
+    name: lodash-es
+    version: 4.17.21
+    dev: true
+
   registry.npmmirror.com/lodash.merge/4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/lodash.merge/-/lodash.merge-4.6.2.tgz}
     name: lodash.merge
@@ -1843,6 +1869,12 @@ packages:
     dependencies:
       brace-expansion: registry.npmmirror.com/brace-expansion/1.1.11
     dev: true
+
+  registry.npmmirror.com/monaco-editor/0.43.0:
+    resolution: {integrity: sha512-cnoqwQi/9fml2Szamv1XbSJieGJ1Dc8tENVMD26Kcfl7xGQWp7OBKMjlwKVGYFJ3/AXJjSOGvcqK7Ry/j9BM1Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/monaco-editor/-/monaco-editor-0.43.0.tgz}
+    name: monaco-editor
+    version: 0.43.0
+    dev: false
 
   registry.npmmirror.com/ms/2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/ms/-/ms-2.1.2.tgz}
