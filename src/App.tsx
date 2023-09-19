@@ -1,7 +1,8 @@
-import "./app.css"
 import { useNavigate } from "react-router-dom"
 import { ROUTER } from "./router"
 import MonacoEditor from "./components/monaco-editor"
+import "./styles/index.less"
+import "./app.css"
 
 const App = () => {
   const navigate = useNavigate()
