@@ -14,7 +14,7 @@ const App = () => {
     navigate(ROUTER.ECHARTSEDITOR)
   }
 
-  const onchange = (code: string) => {
+  const onChange = (code: string) => {
     console.log(code)
   }
 
@@ -22,7 +22,7 @@ const App = () => {
     <div>
       <button onClick={toEchartsList}>echarts list</button>
       <button onClick={toEchartsEditor}>echarts editor</button>
-      <MonacoEditor onChange={onchange} />
+      <MonacoEditor onBulr={onChange}/>
     </div>
   )
 }

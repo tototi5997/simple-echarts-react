@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react"
 import * as MEditor from "monaco-editor"
 import { defaultOpts } from "./config"
-// import { debounce } from "lodash-es"
+import { debounce } from "lodash-es"
 import c from "classnames"
 import s from "./index.module.less"
 
@@ -10,7 +10,7 @@ interface IMonacoEditor {
   onBulr?: (codeStr: string) => void
 }
 const MonacoEditor: React.FC<IMonacoEditor> = (props) => {
-  // const { onChange, onBulr } = props
+  const { onChange, onBulr } = props
   const editor = useRef<MEditor.editor.IStandaloneCodeEditor>()
   const editorContainer = useRef(null)
 
@@ -24,8 +24,8 @@ const MonacoEditor: React.FC<IMonacoEditor> = (props) => {
         })
       )
 
-      // editor.current.onDidChangeModelContent(() => debounceChangeHandler())
-      // editor.current.onDidBlurEditorText(() => blurHandler())
+      editor.current.onDidChangeModelContent(() => debounceChangeHandler())
+      editor.current.onDidBlurEditorText(() => blurHandler())
     }
 
     return () => {
@@ -33,17 +33,17 @@ const MonacoEditor: React.FC<IMonacoEditor> = (props) => {
     }
   }, [])
 
-  // const debounceChangeHandler = debounce(() => {
-  //   if (editor.current) {
-  //     onChange?.(editor.current.getValue())
-  //   }
-  // }, 300)
+  const debounceChangeHandler = debounce(() => {
+    if (editor.current) {
+      onChange?.(editor.current.getValue())
+    }
+  }, 300)
 
-  // const blurHandler = () => {
-  //   if (editor.current) {
-  //     onBulr?.(editor.current.getValue())
-  //   }
-  // }
+  const blurHandler = () => {
+    if (editor.current) {
+      onBulr?.(editor.current.getValue())
+    }
+  }
 
   return <div className={c(s.editor)} ref={editorContainer} />
 }
